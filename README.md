@@ -1,6 +1,6 @@
 # Phone-Catalog
 
-[View Live Demo](https://lishvets.github.io/Phone-Catalog) | [GitHub Repository](https://github.com/lishvets/Phone-Catalog)
+[View Live Demo](https://lishvets.github.io/Phone-Catalog)
 
 A feature-rich, fully responsive e-commerce web application for browsing, filtering, and purchasing tech gadgets (Phones, Tablets, and Accessories). Developed as an individual project with a strong emphasis on clean architecture, state management, modern UI/UX, and performance.
 
