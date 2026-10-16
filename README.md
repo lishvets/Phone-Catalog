@@ -1,47 +1,62 @@
 # Phone-Catalog
 
-[View Live Demo](https://lishvets.github.io/Phone-Catalog)
+## Overview
+Phone Catalog is a modern, responsive e-commerce web platform created strictly following pixel-perfect Figma specifications. The application provides an intuitive browsing experience for various tech devices (Phones, Tablets, and Accessories). Built with performance and usability in mind, it features real-time search, category filtering, dynamic pagination, multi-language support, and persistent state management for cart and favorites across sessions.
 
-A feature-rich, fully responsive e-commerce web application for browsing, filtering, and purchasing tech gadgets (Phones, Tablets, and Accessories). Developed as an individual project with a strong emphasis on clean architecture, state management, modern UI/UX, and performance.
+## Demo
+Explore the live site here: [DEMO](https://lishvets.github.io/Phone-Catalog).
 
----
+## Key Features
+- **Hero Image Slider:** Interactive top-banner carousel with automatic switching and navigation controls.
+- **Product Highlights Carousel:** Dedicated horizontal sliders showcasing hot deals and discounted items.
+- **Category Navigation:** Direct links and product count indicators for Phones, Tablets, and Accessories.
+- **New Arrivals Showcase:** Filtered view highlighting the latest gadgets ordered by release and price.
+- **Dynamic Catalog Controls:** Customizable dropdowns for sorting (age, title, price) alongside responsive page size limits and pagination controls.
+- **Detailed Item View:** Comprehensive product specifications, image gallery picker, color/capacity options, and breadcrumb navigation (`/product/:productId`).
+- **Interactive Shopping Cart:** Full cart workflow including item quantity adjustments, total calculations, persistent storage via `localStorage`, and an interactive checkout modal.
+- **Favorites & Wishlist:** Instant item bookmarking with local storage persistence to save items for later.
+- **Localization & Themes:** Dark/Light theme switching and English/Ukrainian language toggle with saved user preferences.
+- **Robust Routing & Error Pages:** Custom `NotFoundPage` handling for invalid URLs, empty search results, and missing product data.
 
-## 🚀 Key Features
+## Challenges
+Building this catalog required solving multiple front-end engineering hurdles to ensure a flawless user journey and reliable application architecture.
 
-- **Advanced Product Catalog & Filtering:**
-  - Dynamic filtering by price and release date.
-  - Real-time search by product name.
-  - Pagination system to handle large sets of items efficiently.
-- **Global Context Architecture:**
-  - Centralized state management using React Context API (`ThemeProvider`, `LanguageProvider`, `FavouritesProvider`, `CartProvider`).
-- **Personalization & Localization:**
-  - Dark and Light theme switcher with persistent storage.
-  - Multi-language support.
-- **Shopping Experience:**
-  - Interactive Shopping Cart with item quantity management.
-  - Wishlist / Favorites functionality.
-  - Detailed product views with specifications (`/product/:productId`).
-- **Responsive Mobile Navigation:** Dedicated mobile menu and intuitive layout for all screen sizes.
+### Key Challenges
+- **Seamless Data Integration:** Orchestrating dynamic components like custom sliders, multi-criteria filters, search queries, and breadcrumbs into a unified data flow.
+- **State Persistence & Synchronization:** Building a reliable global state architecture using React Context API to synchronize cart counts, wishlist status, theme, and language across multiple tabs and pages.
+- **Adaptive Layouts:** Crafting custom SCSS layouts and mobile-first navigation menus that deliver a consistent experience across smartphones, tablets, and desktop displays.
+- **Graceful Error Recovery:** Implementing fallback states, skeleton loaders, and non-blocking notifications during API calls or network delays.
+- **UI/UX Refinement:** Fine-tuning UI interactions, smooth modal transitions, dynamic image galleries, and pagination feedback for an engaging shopping experience.
+- **Codebase Maintainability:** Structuring code cleanly with TypeScript interfaces and modular BEM-style SCSS to keep components scalable and easy to extend.
 
----
+Through continuous refactoring and strict adherence to component-driven design, these challenges were successfully resolved to create a polished, production-ready product.
 
-## 🛠️ Tech Stack & Architecture
+## Technologies Used
+- **React:** UI library for building modular, declarative interface components.
+- **TypeScript:** Enforces type safety, interface structures, and better developer feedback.
+- **Vite:** High-performance build tool offering instant Hot Module Replacement (HMR).
+- **React Router DOM (v6):** Client-side navigation, nested routes, and location tracking.
+- **React Context API:** Light-weight global state management solution for theme, language, cart, and wishlist.
+- **Sass (SCSS):** Preprocessor enabling structured BEM methodology, variables, and mixins.
 
-- **Core:** React, TypeScript, React Router DOM (v6)
-- **Styling:** SCSS (Sass) with modular and clean BEM-inspired architecture
-- **State Management:** React Context API + Custom Hooks
-- **Build Tool:** Vite / Create React App
+## Installation & Setup
 
-## Getting Started
-
-To get a local copy up and running, follow these simple steps:
+To install the project and run it locally, follow these steps:
 
 1. **Clone the repository:**
-git clone
+git clone https://github.com/lishvets/Phone-Catalog.git
 
-2. **Install dependencies:**
+2. **Navigate to the project directory:**
+cd Phone-Catalog
+
+3. **Install dependencies:**
 npm install
 
-3. **Run the project locally:**
+4. **Run the project locally:**
 npm start
+
+5. **Build & deploy:**
+
+npm run build
+npm run deploy
 
